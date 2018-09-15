@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+	Name: Sarah Melvin
+	Date created: September 8,2018>
+	Most recent revision: September 8, 2018
+-->
+<html lang="en">
+<head>
+	<title>Coco's Restaurant</title>
+	<script type="text/JavaScript" src="contactUs.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+	<p align=center id=js_disabled_message style="color: red;">
+    JavaScript needs to be enabled to best view this website <br>
+	</p>
+	<script>
+    document.getElementById('js_disabled_message').style.display = 'none';
+	</script>	
+
+	<style>
+
+		header {
+		font-family: arial;
+	}
+	
+	body {
+		background-color: lightblue;
+	}
+	nav a {
+		background-color: #5b7d87;
+		color: #fef9ff;
+		padding: 8px;
+		border: thin solid #0d1f2d;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		margin: 20px;
+		width: 100px;
+		float: left;
+		}
+	nav a:visited {
+		color: #e4c3ad;
+	}
+	nav a:hover {
+			font-weight: bold;
+		}
+		
+	nav a:active {
+		text-decoration: none;
+	}	
+	
+	
+	
+	
+	
+	
+	</style>
+</head>
+
+<body>
+
+<header>
+	<h1><center>Coco's Restaurant</center></h1>
+	<h2>We are opening a new location!</h2>
+</header>
+
+<nav> <!-- will include navigation button or links -->
+	<hr />
+	<div class="row">
+	<div class="col-lg-4 col-md"><p><a class="btn badge-pill" href="restaurant.html"><span class="fa fa-home"></span></a></p></div>
+	<div class="col-lg-4 col-md"><p><a class="btn badge-pill" href="menu.html">Menu</a></p></div>
+	<div class="col-lg-4 col-md"><p><a class="btn badge-pill" href="contact.html">Contact Us</a></p></div>
+	</div>
+	<div class="clear-float"></div>
+	<hr />
+</nav>
+
+
+<div class="container-fluid">
+	<form action="contact.html" method="POST" name="contactinfo" onsubmit="return validateItems();">
+	<div class="form-group">
+		<p><b>Name: <input type="text" name="myTextInput" /></b></p>
+		<p><b>Email: <input type="text" name="emailInput" /></b></p>
+		<p><b>Phone: <input type="text" name="phoneInput" /></b></p>
+		<p><b>Reason for inquiry: <select name="inquiry">
+			<option value="type">Catering</option>
+			<option value="type">Private Party</option>
+			<option value="type">Feedback</option>
+			<option value="type">Other</option>
+		</b></p>
+			</select><br />
+		<p><b>Additional Information: <textarea name="additionalInfo"></textarea></b></p>
+		<p><b>Have you been to the restaurant?</b> <input type="radio" name="answer" value="No" checked />No		
+			<input type="radio" name="answer" value="Yes" />Yes </p>
+		<p>Best days to contact you: <input type="checkbox" name="days" value="M" />M
+		<input type="checkbox" name="days" value="T" />T
+		<input type="checkbox" name="days" value="W" />W
+		<input type="checkbox" name="days" value="Th" />Th
+		<input type="checkbox" name="days" value="F" />F<br />
+	</div>
+	
+		<p><input type="submit" value="Submit Request" /></p>
+		
+	</form>
+	
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+<footer>
+	<hr />
+	<p><center>123 Milan St, Charlotte, NC, 28276</center></p>
+	<p><center>704-523-1234</center></p>
+</footer>
+</html>
+	
