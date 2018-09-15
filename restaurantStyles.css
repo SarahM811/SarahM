@@ -1,0 +1,14 @@
+
+header, footer {
+			background-color: lightgreen;
+			color: darkgreen;
+}
+
+
+nav a {
+	float: left;
+}
+
+.clear-float {
+	clear:both;
+}
